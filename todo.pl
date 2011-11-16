@@ -254,5 +254,14 @@ sub listTasks
 #print usage instructions. also called when @argv = 0
 sub printHelp
 {
-	print ("Usage Instructions: \nMore to come!");
+	print ("Usage Instructions: \n");
+	print "
+Parameters:
+-----------
+
+a | add - add new task
+d | done - mark task as done and move to done file
+l | list - List active / pending tasks
+x | delete - delete task number as in list
+";
 }

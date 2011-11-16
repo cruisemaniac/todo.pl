@@ -1,0 +1,22 @@
+Perl script that 'apes' the functionality of Gina Trapani's todo.txt
+
+To run the script:
+todo.pl {adxl} Task detail
+
+
+Open the script file in a text editor and modify the $TODODIR parameter to configure where you want the todo.txt and done.txt files to exist. Mentioning a folder in your dropbox makes the files available everywhere.
+Leaving the parameter blank will create the supporting text files in the same folder as the script.
+
+
+Parameters:
+-----------
+
+a | add - add new task
+d | done - mark task as done and move to done file
+l | list - List active / pending tasks
+x | delete - delete task number as in list
+
+Functionality yet to implement:
+
+* Modifying tasks
+* Adding search / reporting functionality
