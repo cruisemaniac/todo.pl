@@ -242,7 +242,7 @@ sub cleanFiles
 sub listTasks
 {
 	print ("\nList of Active / Pending tasks: \n");
-	open(TODOFILE, "<", File::Spec->catfile(($TODODIR ? $TODODIR : getcwd), "todo.txt")) or print("\n No Todo file exists!");
+	open(TODOFILE, "<", File::Spec->catfile(($TODODIR ? $TODODIR : getcwd), "todo.txt")) or print("\nNo Todo file exists!");
 	my $count = 0;
 	while(<TODOFILE>)
 	{
